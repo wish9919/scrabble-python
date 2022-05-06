@@ -101,7 +101,7 @@ while True:
     break
 
 
-#? Enter gameplay loop (Requirement 3).
+# Enter gameplay loop (Requirement 3).
 letters = select_letters()
 used_words = []
 total_score = 0

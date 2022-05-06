@@ -11,17 +11,25 @@
 
 
 # Import the required modules.
-import tkinter # Used to create the GUI.
+from  tkinter  import * # Used to create the GUI.
 import tkinter.messagebox # Used to show pop-up information windows.
 import json # Used to convert between JSON-formatted text and Python variables. 
 
+
+
+def main():
+    root = Tk()
+    gui = ProgramGUI(root, "Word Find Log Viewer")
+
 class ProgramGUI:
-    def __init__(self):
+    def __init__(self, root, title):
         # This is the constructor of the class.
         # It is responsible for loading the log file data and creating the user interface.
         # See the "Constructor of the GUI Class of log_viewer.py" section of the assignment brief.
+        self.root = root
+        self.root.title(title)
+        self.root.mainloop()
         pass
-
 
 
     # This method displays the current log
@@ -45,5 +53,8 @@ class ProgramGUI:
         pass
 
 
+main()
 
-gui = ProgramGUI()
+
+
+
