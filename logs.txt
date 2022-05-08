@@ -1,1 +1,21 @@
-[{"letters": ["S", "A", "O", "F", "X", "L", "B", "A", "C"], "words": ["sofa", "cola"], "score": 13}, {"letters": ["B", "V", "T", "C", "K", "H", "C", "E", "K"], "words": ["heck"], "score": 20}]
+[
+    {
+        "letters": [
+            "T",
+            "O",
+            "H",
+            "A",
+            "T",
+            "A",
+            "E",
+            "A",
+            "I"
+        ],
+        "score": 15,
+        "words": [
+            "hat",
+            "tit",
+            "hit"
+        ]
+    }
+]
