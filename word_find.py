@@ -192,7 +192,7 @@ if total_score >= 10:
   logs_array.append(data)
 
   with open("logs.txt", "w+") as file:
-    json.dump(logs_array, file)
+    json.dump(logs_array, file, indent=4, sort_keys=True)
     file.close()
 
 print(f"Your final score is {total_score}.")
