@@ -12,7 +12,7 @@
 
 # Import the necessary modules.
 import enchant # Used to import pyenchant package.
-#import json # Used to convert between JSON-formatted text and Python variables.
+import json # Used to convert between JSON-formatted text and Python variables.
 import string # Used to provide convenient access to a string variable containing all uppercase letters.
 import random # Used to randomly select letters.
 
@@ -121,7 +121,7 @@ while True:
 
     if(is_valid_word):
       if(is_not_valid_characters):
-        print("You're using invalid characters!")
+        print("Invalid character(s) used!")
         if(hard_mode):
           print("Game Over!")
           break
@@ -159,6 +159,8 @@ while True:
   elif(word == "l"):
     print("\nPreviously entered words:")
     used_words.sort()
+    if not used_words:
+      print("\nYou have not yet entered any word.")
     for w in used_words:
       print(f"- {w.upper()}")
    # If input is "E",
@@ -175,9 +177,27 @@ while True:
 
 
 
-print(f"\nYour final score is {total_score}.")
+if total_score >= 10:
+  print(f"\nCongratulations!")
+  with open("logs.txt", "r") as file:
+    logs_array = json.load(file)
+    file.close()
+
+  data = {
+    "letters": letters,
+    "words": used_words,
+    "score": total_score
+  }
+
+  logs_array.append(data)
+
+  with open("logs.txt", "w+") as file:
+    json.dump(logs_array, file)
+    file.close()
+
+print(f"Your final score is {total_score}.")
 # Print "Thank you for playing!" (Requirement 5).
-print(f"Thank you for playing!")    
+print(f"\nThank you for playing!")    
   
 
 
