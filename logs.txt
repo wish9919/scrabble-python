@@ -17,5 +17,26 @@
             "tit",
             "hit"
         ]
+    },
+    {
+        "letters": [
+            "E",
+            "N",
+            "R",
+            "S",
+            "E",
+            "R",
+            "I",
+            "P",
+            "N"
+        ],
+        "score": 21,
+        "words": [
+            "nine",
+            "pen",
+            "pin",
+            "rein",
+            "sir"
+        ]
     }
 ]
