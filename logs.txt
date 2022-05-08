@@ -38,5 +38,28 @@
             "rein",
             "sir"
         ]
+    },
+    {
+        "letters": [
+            "Z",
+            "L",
+            "E",
+            "N",
+            "W",
+            "C",
+            "B",
+            "O",
+            "A"
+        ],
+        "score": 50,
+        "words": [
+            "bole",
+            "won",
+            "zen",
+            "loan",
+            "lane",
+            "bone",
+            "zoo"
+        ]
     }
 ]
